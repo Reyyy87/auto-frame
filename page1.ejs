@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Upload Images and Frames</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="images">Upload Images (JPG, max 10 files):</label>
+        <input type="file" id="images" name="images" accept=".jpg" multiple required>
+
+        <label for="frames">Upload Frames (PNG, 2 files):</label>
+        <input type="file" id="frames" name="frames" accept=".png" multiple required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
